@@ -14,7 +14,7 @@ module.exports = {
       gg:"#E0F7E6",
       greentop:"#61CE95",
       dashboard:"#8AA07C",
-      dbhover:"#104c37"
+      dbhover:"#768c67"
       
       },
       

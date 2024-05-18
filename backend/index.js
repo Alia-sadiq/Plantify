@@ -44,7 +44,7 @@ const app = express();
 const campaignRoutes = require("./Routes/campaignRoutes.js");
 const requestRoutes = require("./Routes/requestRoutes.js");
 const teamRoutes = require("./Routes/teamRoutes.js");
-const EventRoutes = require("./Routes/EventRoutes.js");
+
 
 // Middleware
 app.use(cors({
@@ -64,7 +64,7 @@ app.get("/", (req, res) => {
 app.use("/api/campaigns", campaignRoutes);
 app.use("/api/requests", requestRoutes);
 app.use("/api/teams", teamRoutes);
-app.use("/api/events", EventRoutes);
+
 
 // MongoDB connection
 mongoose

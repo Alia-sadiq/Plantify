@@ -57,10 +57,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from '../src/components/Layout';
-import Onboard from '../src/pages/onboard';
+import Onboard from './pages/onboard.js';
 import Campaigns from '../src/pages/Campaigns';
-import MyCalendarComponent from '../src/pages/Calender.js';
-import Profile from '../src/pages/profile';
+import Profile from './pages/Profile.js';
 import Insight from '../src/pages/Insights.js';
 import CreateCampaignForm from '../src/pages/createCampaign.js';
 
@@ -72,7 +71,6 @@ const App = () => {
           <Route index element={<Onboard />} />
           <Route path="onboard" element={<Onboard />} />
           <Route path="campaigns" element={<Campaigns />} />
-          <Route path="Calendar" element={<MyCalendarComponent />} />
           <Route path="profile" element={<Profile />} />
           <Route path="Insights" element={<Insight />} /> 
           <Route path="createCampaign" element={<CreateCampaignForm />} />
