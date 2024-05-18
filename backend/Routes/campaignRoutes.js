@@ -1,17 +1,21 @@
 const express = require("express");
-const routes = express.Router(); // Changed from Router to routes
+const routes = express.Router();
+ // Import CORS middleware
+//const cors = require("cors");
 const {
   getCampaign,
   getCampaigns,
   addCampaign,
-  updatedCampaign,
+  updateCampaign,
   deleteCampaign,
-} = require("../controller/product.controller.js");
+} = require("../Controller/campaignController.js");
 
+//routes.use(cors());
+// Define your routes
 routes.get("/", getCampaigns);
 routes.get("/:id", getCampaign);
-routes.put("/:id", updatedCampaign);
+routes.put("/:id", updateCampaign);
 routes.delete("/:id", deleteCampaign);
 routes.post("/", addCampaign);
 
-module.exports = routes; // Changed from router to routes
+module.exports = routes;

@@ -2,45 +2,54 @@ const mongoose = require('mongoose');
 
 const CampaignSchema = mongoose.Schema(
   {
-    name: {
+    campaignName: {
       type: String,
       required: [true, "Please enter campaign name"],
     },
-    Date: {
-      type: Number,
-      required: true,
-      default: 0,
+    aboutCampaign:{
+      type: String,
+      required:true,
+     
     },
-    location: {
-      type: Number,
-      required: true,
-      default: 0,
+    startDate: {
+      type: String,
+      required: false,
+     
+    },
+    endData:{
+      type: String,
+      required:false,
+    },
+    location:{
+      type: String,
+      required:false,
+    },
+    city: {
+      type: String,
+      required: false,
     },
     image: {
       type: String,
       required: false,
     },
-    DonationTarget:{
+  targetAmount:{
       type:Number,
-      required: true,
+      required: false,
       default:0,
     },
-    Team:{
-      type:List,
-      required: true,
-      default:0,
-    },
-    Volunteers:{
-      type:List,
-      required: true,
+    
+    volunteers:{
+      type:Array,
+      required: false,
       default:[],
-    },       
+    },  
+
   },
   {
     timestamps: true,
   }
  );
 
-const Product = mongoose.model("Product", ProductSchema); // Pass ProductSchema object here
+const campaign = mongoose.model("Campaign", CampaignSchema); // Pass ProductSchema object here
 
-module.exports = Product;
+module.exports = campaign;
