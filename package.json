@@ -22,6 +22,7 @@
     "@fullcalendar/interaction": "^6.1.11",
     "@fullcalendar/react": "^6.1.11",
     "@fullcalendar/timegrid": "^6.1.11",
+    "@heroicons/react": "^2.1.3",
     "@mui/material": "^5.15.17",
     "apexcharts": "^3.49.0",
     "chart.js": "^4.4.2",

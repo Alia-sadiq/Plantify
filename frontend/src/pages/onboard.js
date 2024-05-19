@@ -40,14 +40,14 @@ const Onboard = () => {
        <div className="fixed right-0.5 top-2 shadow-md rounded-l-full h-16 w-48 bg-gg"> 
           <div className="absolute top-2 right-2 flex items-center">
              <div className=" flex flex-col right-2">
-              <span className="text-sm font-medium">The Alia Sadiq</span>
+              <span className="text-sm font-medium">Alia Sadiq</span>
               <span className="text-xs text-gray-500 text-center">
                 Rawalpindi
               </span>
             </div>
             <img
               className="w-12 h-10 rounded-full object-cover ml-2 mr-5 "
-              src="https://picsum.photos/id/237/100"
+              src={`${process.env.PUBLIC_URL}/assest/pp9.png`} 
               alt="Profile Picture"
             />
            </div> 

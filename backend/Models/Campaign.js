@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const CampaignSchema = mongoose.Schema(
   {
-    campaignName: {
+    title: {
       type: String,
       required: [true, "Please enter campaign name"],
     },
-    aboutCampaign:{
+    description:{
       type: String,
       required:true,
      
@@ -32,7 +32,7 @@ const CampaignSchema = mongoose.Schema(
       type: String,
       required: false,
     },
-  targetAmount:{
+   targetDonation:{
       type:Number,
       required: false,
       default:0,

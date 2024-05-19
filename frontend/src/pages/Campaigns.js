@@ -13,10 +13,10 @@ const Campaigns = () => {
     <div className="flex h-full">
       <div className="font-josefin-sans text-gary-100 ">
         <h1 className="text-2xl font-bold pt-10 pl-14 ">Campaigns</h1>
-        <div>
+        <div className="ml-[540px] ">
           <Link
             to="/createCampaign"
-            className="flex items-center w-28 p-2 text-gray-200 hover:bg-dbhover rounded"
+            className="flex items-center w-28 p-2 bg-dbhover rounded"
             aria-label="Campaigns"
           >
             <FaPlusCircle className="mr-3" />

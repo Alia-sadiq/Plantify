@@ -38,15 +38,15 @@ const FilterableCampaigns = () => {
   return (
     <div className="container mx-auto py-0">
       <div className="flex justify-center mb-4 relative">
-        <h5 className="text-sm font-bold py-2 px-4 mr-auto">Filter by:</h5>
+        <h5 className="text-sm font-bold py-2 px-4 left-0">Filter by:</h5>
         <button
-        className="mx-2 justify-start py-1 px-4 rounded-full bg-gray-200"
+        className="mx-2 mr-96 justify-start py-1 px-4 rounded-full bg-gray-200"
         onClick={() => setShowDropdown(!showDropdown)}
       >
         <FiFilter className="h-6 w-6" />
       </button>
         {showDropdown && (
-          <div className="absolute right-0 top-full bg-white rounded-md shadow-lg py-1 mt-1 ">
+          <div className="absolute mr-96 top-full bg-white rounded-md shadow-lg py-1 mt-1 ">
             {/* top-full left-0 bg-white rounded-md shadow-lg py-1 mt-1" */}
             <button className="block w-full text-left px-4 py-2 text-sm text-gray-800 hover:bg-gray-200" onClick={() => handleFilterChange('all')}>All</button>
             <button className="block w-full text-left px-4 py-2 text-sm text-gray-800 hover:bg-gray-200" onClick={() => handleFilterChange('ongoing')}>Ongoing</button>
@@ -60,7 +60,7 @@ const FilterableCampaigns = () => {
           {filteredCampaigns.map(campaign => (
             <li key={campaign.id} className="bg-white rounded-lg shadow-md p-4 mb-4 flex">
               <div className="w-1/2 pr-4">
-                <img src={campaign.image} alt={campaign.name} className="w-40 h-40 object-cover rounded-lg" />
+                <img src={`/assest/${campaign.image} `}alt={campaign.name} className="w-40 h-40 object-cover rounded-lg" />
               </div>
               <div className="w-1/2 flex flex-col justify-between">
                 <div>
@@ -70,7 +70,7 @@ const FilterableCampaigns = () => {
                   <p className="text-gray-600 mb-2">Donations: {campaign.donations}</p>
                   <p className="text-sm text-gray-500">{campaign.status}</p>
                 </div>
-                <div className="flex justify-end">
+                {/* <div className="flex justify-end">
                   <Link to={`/editCampaign`}>
                     <button className="flex items-center text-gray-500 mr-2">
                       <svg className="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -80,14 +80,14 @@ const FilterableCampaigns = () => {
                     </button>
                   </Link>
                   {/* Delete button */}
-                  <button className="flex items-center text-red-500 mr-2">
+                  {/* <button className="flex items-center text-red-500 mr-2">
                     <svg className="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                     Delete
-                  </button>
+                  </button> */}
                   {/* View button */}
-                  <Link to="/Insights.js" className="nav-link" >
+                  {/* <Link to="/Insights.js" className="nav-link" >
                     <button className="flex items-center text-gray-500">
                       <svg className="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -95,7 +95,7 @@ const FilterableCampaigns = () => {
                       View
                     </button>
                   </Link>
-                </div>
+                </div> */} 
               </div>
             </li>
           ))}
