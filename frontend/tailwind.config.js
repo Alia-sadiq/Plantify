@@ -6,7 +6,8 @@ module.exports = {
     extend: {
      
     screens:{
-      sm:"200px",
+      sm:"100px",
+      // md:"300px",
     },
       colors: {
       ngreen:"#0FA958",

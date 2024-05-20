@@ -32,13 +32,13 @@ const Sidebar = () => {
           </Link> */}
          
         </div>
-        <div className="mt-auto space-y-1">
+        {/* <div className="mt-auto space-y-1">
           <div className="text-gray-500 uppercase text-xs">Others</div>
           <Link to="/Insights" className="flex items-center p-2 text-gray-200 hover:bg-dbhover rounded" aria-label="Chart">
             <FaChartBar className="mr-3" />
             Insights
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className="p-4">
         <Link to="/back" className="flex items-center p-2 text-gray-200 hover:bg-dbhover rounded" aria-label="Back">

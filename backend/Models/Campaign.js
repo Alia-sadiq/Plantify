@@ -4,11 +4,11 @@ const CampaignSchema = mongoose.Schema(
   {
     title: {
       type: String,
-      required: [true, "Please enter campaign name"],
+      required: [false, "Please enter campaign name"],
     },
     description:{
       type: String,
-      required:true,
+      required:false,
      
     },
     startDate: {
@@ -28,7 +28,7 @@ const CampaignSchema = mongoose.Schema(
       type: String,
       required: false,
     },
-    image: {
+    banner: {
       type: String,
       required: false,
     },
@@ -39,11 +39,15 @@ const CampaignSchema = mongoose.Schema(
     },
     
     volunteers:{
-      type:Array,
+      type: [Number],
       required: false,
       default:[],
     },  
-
+    status:{
+      type: String,
+      required:true,
+      
+    },
   },
   {
     timestamps: true,

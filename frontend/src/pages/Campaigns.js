@@ -1,5 +1,5 @@
 import React from "react";
-import FilterableCampaigns from "../components/campaignFilters.js";
+import FilterableCampaigns from "../components/Filters.js";
 import CampaignList from "../components/CampaignList.js";
 import Calendar from "../components/Calendar";
 import Team from "../components/Team.js";
@@ -24,7 +24,7 @@ const Campaigns = () => {
           </Link>
         </div>
         <div>
-          <FilterableCampaigns />
+        <FilterableCampaigns/>
         </div>
        
         <div className="campaign-list">
